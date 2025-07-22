@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
 
 body {
   display: flex;
@@ -8,11 +6,24 @@ body {
   align-items: center;
   margin: 20px;
   font-family: sans-serif;
+  background-color: rgb(137, 64, 96);
+  background-image: url(/images/background.png);
+  background-size: cover;
+}
+
+h1 {
+  font-size: 90px;
+  color: #6dfc83;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px black;
+  /* font-family: 'Press Start 2P', cursive; */
+  font-family: "Jersey 10", Arial, Helvetica, sans-serif;
 }
 
 .controls {
   display: flex;
   justify-content: center;
+  margin-top: -20px;
 }
 
 .container {
@@ -21,11 +32,18 @@ body {
   width: 960px;
   height: 960px;
   border: 2px solid black;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  border-radius: 10px;
 }
 
 .squareDivs {
-  border: 1px solid black;
+  border: 0.5px solid #ccc;
+  box-sizing: border-box;
+  background-color: white;
+  transition: background-color 0.1s ease;
 }
+
 .squareDivs:hover {
   background-color: black;
 }
@@ -39,4 +57,8 @@ button {
   color: white;
   background-color: blueviolet;
   cursor: pointer;
+}
+
+input{
+  display: none;
 }
